@@ -15,7 +15,7 @@ $(base).pdf: $(base).tex $(base).rst.tex $(base).rst
 	cp slides.pdf "$(slidefilename)"-`cat git-sha`.pdf
 
 $(base).rst.tex: $(base).rst
-	rst2beamer.py --template=template.tex --overlaybullets=False --output-encoding="utf-8" slides.rst > slides.rst.tex
+	rst2beamer.py --codeblocks-use-pygments --template=template.tex --overlaybullets=False --output-encoding="utf-8" slides.rst > slides.rst.tex
 
 
 clean:
