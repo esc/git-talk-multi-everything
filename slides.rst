@@ -1,5 +1,15 @@
-Focus
------
+Introduction
+============
+
+Outline
+-------
+
+.. raw:: latex
+
+    \tableofcontents
+
+In The Beginning ...
+--------------------
 
 * When doing git training I usually take the following approach:
 
@@ -13,23 +23,109 @@ Focus
 
    * E.g. ``git rebase``
 
+Directed Acyclic Graph
+----------------------
+
+.. image:: images/new_graph.pdf
+   :scale: 30
+
+Directed Acyclic Graph -- With Branches and Tags
+------------------------------------------------
+
+.. image:: images/new_graph_with_refs.pdf
+   :scale: 30
+
+How does it Continue?
+---------------------
+
 * This is pretty straightforward
 * ... However I have not yet said anything about synchronising with remote repos.
+
+
+* Often people stumble when trying to understand how remotes are tracked in the
+  local Git repository.
+
+
+* Especially when you have multiple feature branches in multiple remote
+  repositories.
 
 Sources for Confusion
 ---------------------
 
-* So, committing locally, branching, tagging, maybe even rebase has been
-  learnt. Then we introduce ``push`` and ``pull`` which somewhat opens another
-  can of worms.
-
-* Oh, I can just use the *push 'n' pull* workflow
+* Initially perhaps people just use the *push 'n' pull* workflow with a single
+  remote ``origin`` and single branch ``master``.
 
   * But wait, why do I get these merge commits? (a.k.a *Diamond Merges*)
   * I thought we were all working on master?
+  * Why aren't we using Branches? I thought they were git's killer feature.
 
-* Oh right, to avoid the diamond merges, I can use ``git pull --rebase``
-* ... *rebase* ... right ...
+* To avoid the diamond merges, use ``git pull --rebase``
+
+  * ... *rebase* ... right ...
+
+Using Multiple Branches
+=======================
+
+Outline
+-------
+
+.. raw:: latex
+
+    \tableofcontents
+
+Multi-Branch basics
+-------------------
+
+* Reminder: Branching (and more importantly: merging) in Git is cheap, quick
+  and easy.
+* Okay, so let's do that.
+
+* So what about getting the branches to your remote?
+* How do others get those branches locally?
+
+  * To review them?
+  * To commit or merge to them?
+
+Pushing Branches
+----------------
+
+Just push the ref:
+
+.. code-block:: console
+
+   $ git push origin HEAD
+   $ git push origin fix/setup
+
+Or, throw in a ``-u`` to set the upstream branch:
+
+.. code-block:: console
+
+   $ git push origin -u HEAD
+   $ git push origin -u fix/setup
+
+Interlude: Upstream-Branch
+--------------------------
+
+* Setting: ``branche.<name>.merge``
+
+* Allows ``git pull`` w/o arguments
+
+Remote Tracking Branches
+------------------------
+
+* Keeping track of what is going on in the remote
+
+The Integration Manager Workflow
+--------------------------------
+
+.. image:: images/developer-public-en.pdf
+   :scale: 40
+
+Submitting Pull-Requests
+------------------------
+
+.. image:: images/github-workflow-en.pdf
+   :scale: 40
 
 Using the 4 word version of ``git fetch``
 -----------------------------------------
@@ -41,11 +137,8 @@ Using the 4 word version of ``git fetch``
 Remote Tracking Branches
 ------------------------
 
-* Keeping track of what is going on in the remote
-
 * ``--track`` and ``--set-upstream``: who is tracking what?
 * What exactly does ``push.default`` do?
-* What exactly does ``branche.<name>.merge`` do?
 
 Stale Branches
 --------------
@@ -55,14 +148,14 @@ Stale Branches
 
 * Delete the feature branches in the remote:
 
-.. code-block::
+.. code-block:: console
 
     $ git push origin --delete <BRANCH>
     $ git push origin :<BRANCH>
 
 * But for others to see the deletion you need ``--prune``
 
-.. code-block::
+.. code-block:: console
 
     $ git fetch --prune
     $ git pull --prune
