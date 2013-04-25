@@ -32,5 +32,5 @@ Included Dependencies
 
 The following dependencies are shipped with the sources:
 
-* rst2beamer (file: `rst2beamer`) is copyright Ryan Krauss and Paul-Michael Agapow
-* ccBeamer (directory: `creative_commons/`) is licensed under Creative Commons Attribution-ShareAlike 3.0
+* rst2beamer (file: ``rst2beamer``) is copyright Ryan Krauss and Paul-Michael Agapow
+* ccBeamer (directory: ``creative_commons/``) is licensed under Creative Commons Attribution-ShareAlike 3.0
