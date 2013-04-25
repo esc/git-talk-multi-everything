@@ -168,6 +168,40 @@ Setting and Querying the Upstream-Branch
 Committing to remote branches
 -----------------------------
 
+* You can't commit directly to remote-tracking branches
+* You need to create a local branch and commit to that
+* Again the upstream-configuration comes in handy
+
+Some ``git checkout`` magic
+---------------------------
+
+You can just use ``git checkout``, if the branch name is unambiguous
+
+.. code-block:: console
+
+   $ git branch -a
+   * master
+     remotes/esc/master
+     remotes/origin/0.4.X
+     remotes/origin/HEAD -> origin/master
+   $ git checkout 0.4.X
+   Branch 0.4.X set up to track remote branch 0.4.X from origin.
+   Switched to a new branch '0.4.X'
+
+Some ``git checkout`` magic
+---------------------------
+
+.. code-block:: console
+
+   $ git branch -a
+   * 0.4.X
+     master
+     remotes/esc/master
+     remotes/origin/0.4.X
+     remotes/origin/HEAD -> origin/master
+   $ git config --get-regexp branch.0.4.X.*
+   branch.0.4.X.remote origin
+   branch.0.4.X.merge refs/heads/0.4.X
 
 
 Deleting Remote Branches
