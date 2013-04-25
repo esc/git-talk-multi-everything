@@ -57,7 +57,7 @@ Sources for Confusion
 
   * But wait, why do I get these merge commits? (a.k.a *Diamond Merges*)
   * I thought we were all working on master?
-  * Why aren't we using Branches? I thought they were git's killer feature.
+  * Why aren't we using Branches? I thought they were Git's killer feature.
 
 * To avoid the diamond merges, use ``git pull --rebase``
 
