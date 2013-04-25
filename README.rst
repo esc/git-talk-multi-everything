@@ -1,12 +1,10 @@
 git-talk-multi-everything
 =========================
 
-:author: Valentin Haenel <valentin@haenel.co>
-
 Description
 -----------
 
-Talk about using Git with multiple branches and multiple remotes 
+Talk about using Git with multiple branches and multiple remotes.
 
 Dependencies
 ------------
@@ -14,9 +12,9 @@ Dependencies
 The talk is made with:
 
 * `rst2beamer <https://github.com/rst2beamer/rst2beamer>`_ (included in repository)
+* `ccBeamer <http://blog.hartwork.org/?p=52>`_ (included in repository)
 * `LaTeX Beamer <https://bitbucket.org/rivanvx/beamer/wiki/Home>`_
 * `Dia <http://projects.gnome.org/dia/>`_
-* `ccBeamer <http://blog.hartwork.org/?p=52>`_ (included in repository)
 
 License
 -------
