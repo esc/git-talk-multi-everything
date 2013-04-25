@@ -229,17 +229,24 @@ Adding a second remote
 * Throw in a ``-f`` to fetch immediately
 * ``git remote add <NAME> -f <URL>``
 
+Remote-Tracking Branches for multiple remotes
+---------------------------------------------
+
+.. image:: images/multi_remote.pdf
+   :scale: 18
+
 Showing all remote-tracking branches
 ------------------------------------
 
 .. code-block:: console
 
    $ git branch -r
-   esc/HEAD -> esc/master
-   esc/master
-   jjhelmus/master
-   pcp13/master
-   scipy-lectures/master
+     github/esc/master
+     github/esc/feature/cli
+     origin/HEAD -> origin/master
+     origin/master
+     origin/feature/gui
+
 
 ... for only a given remote
 ---------------------------
@@ -255,8 +262,9 @@ Showing all remote-tracking branches
        echo ${line#refs/remotes/};
      done ;
    } ; f
- $ git ls-rt jjhelmus
- jjhelmus/master
+ $ git ls-rt esc
+ github/esc/master
+ github/esc/feature/cli
 
 
 
