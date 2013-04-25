@@ -293,7 +293,17 @@ Adding a Second Remote
 ----------------------
 
 * Throw in a ``-f`` to fetch immediately
-* ``git remote add <NAME> -f <URL>``
+
+  .. code-block:: console
+
+    $ git remote add $REMOTE -f $URL
+
+* Showing all remotes:
+
+  .. code-block:: console
+
+    $ git remote -vv
+
 
 Remote-Tracking Branches for Multiple Remotes
 ---------------------------------------------
