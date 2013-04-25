@@ -138,8 +138,8 @@ Interlude: Upstream-Branch
 
 * Setting
 
-  * ``branch.<name>.merge``
   * ``branch.<name>.remote``
+  * ``branch.<name>.merge``
 
   .. code-block:: ini
 
@@ -157,6 +157,8 @@ Interlude: Upstream-Branch
     * ``simple``
 
   * If you are using Git 2.0, where the default is ``simple``
+
+* Shows you number ahead/behind/diveregd in ``git status``
 
 Setting and Querying the Upstream-Branch
 ----------------------------------------
