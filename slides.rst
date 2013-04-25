@@ -86,6 +86,28 @@ Multi-Branch basics
   * To review them?
   * To commit or merge to them?
 
+Interlude: Remote Tracking Branches
+-----------------------------------
+
+* Reminder: Branches are just *pointers* into the DAG
+* Remote-tracking
+* Keeping track of what is going on in the remote
+* Updated by Git during synchronization
+
+  * (via ``git fetch origin``, ``git pull``, ``git remote update``, ...)
+
+Before ``git clone``
+--------------------
+
+.. image:: images/new_clone_before.pdf
+   :scale: 20
+
+After ``git clone``
+-------------------
+
+.. image:: images/new_clone_after.pdf
+   :scale: 20
+
 Pushing Branches
 ----------------
 
@@ -110,10 +132,6 @@ Interlude: Upstream-Branch
 
 * Allows ``git pull`` w/o arguments
 
-Remote Tracking Branches
-------------------------
-
-* Keeping track of what is going on in the remote
 
 The Integration Manager Workflow
 --------------------------------
