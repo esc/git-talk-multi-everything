@@ -400,7 +400,7 @@ Submitting Feature Branches through Pull-Requests
 
 * Makes use of `hub <https://github.com/defunkt/hub>`_ -- Github from the command line
 * And a special alias ``prune-dev``
-* ``origin`` is the place I will submit Pull-Requests to
+* ``origin`` is the place I will submit pull-requests to
 * ``esc`` is my fork of ``origin`` on github
 * ``@{u}`` for ``master`` is ``origin/master``
 * ``co`` is an alias for checkout
