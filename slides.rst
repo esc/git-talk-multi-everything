@@ -183,6 +183,7 @@ Using the Upstream-Branch in Other Commands
 
       $ git log @{u}..
       $ git rebase -i @{u}
+      $ git merge --ff @{u}
 
 Committing to Remote Branches
 -----------------------------
