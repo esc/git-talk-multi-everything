@@ -201,6 +201,21 @@ Stale Branches
     $ git pull --prune
     $ git remote update --prune
 
+A quote
+-------
+
+.. code-block:: irc
+
+    « amitpraka» Hi, i have a lot of remotes/origin/X branches
+    on local..  however git push origin: X or
+    git push origin --delete X doesn't work
+    complaining of remote ref does not exist
+    « amitpraka» How do I get rid of my local remotes/origin/X
+    w.o deleting each one individually?
+    «       esc» amitprakash: you could try the --prune
+    option for git fetch
+    « amitpraka» esc, thanks.. that worked
+
 The Github Model
 ----------------
 
