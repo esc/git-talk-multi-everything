@@ -332,15 +332,108 @@ Showing all remote-tracking branches
  github/esc/master
  github/esc/feature/cli
 
-Using the 4 word version of ``git fetch``
------------------------------------------
+Getting Updates
+---------------
+
+* There are many ways to synchronize with the remote:
+
+  .. code-block:: console
+
+    $ git fetch $REMOTE     # for a given remote
+    $ git pull              # with upstream branch 
+    $ git pull $REMOTE $REF # with out
+    $ git remote update     # potentially only specific remotes
+
+Getting Updates -- Personal Favorite
+------------------------------------
+
+* My personal favorite workflow is
+
+  .. code-block:: console
+
+    $ git config alias.fa
+    fetch --all --tags --prune
+    $ git config alias.ft
+    merge --ff @{u}
+    $ git fa
+    $ git ft
+
+* Why?
+
+  * Allows me to fast forward my branches, no implied merge or rebase
+    * My shell prompt shows number ahead/behind/diveregd
+  * ``--tags`` will update re-written tags for me
+    * Yes, I know you aren't supposed to rewrite tags
+  * ``--prune`` will prune stale remote-tracking branches
+
+Warning: Using the 4 word version of ``git fetch``
+--------------------------------------------------
 
 * ``git pull`` is ``fetch`` + ``merge``
-* "Oh great, so I can just use ``git fetch origin master``?"
-* "And what exactly is the ``FETCH_HEAD``?
+* You could just use:
 
-Remote Tracking Branches
-------------------------
+  .. code-block:: console
 
-* ``--track`` and ``--set-upstream``: who is tracking what?
-* What exactly does ``push.default`` do?
+    $ git fetch origin master
+
+* However you need to know what ``FETCH_HEAD`` means
+
+Submitting Feature Branches through Pull-Requests
+-------------------------------------------------
+
+* Makes use of `hub <https://github.com/defunkt/hub>`_ -- Github from the command line
+* And a special alias ``prune-dev``
+* ``origin`` is the place I will submit Pull-Requests to
+* ``esc`` is my fork of ``origin`` on github
+* ``@{u}`` for ``master`` is ``origin/master``
+* ``co`` is an alias for checkout
+
+Alias ``git prune-dev``
+-----------------------
+
+* Figure out which branches have been merged
+* Delete those branches
+* Also, delete them from the remote repository
+
+  .. code-block:: console
+
+      $ git config alias.prune-dev
+        !f(){
+          merged=$(git branch --merged |
+                   grep -v -e '^*' -e master |
+                   xargs) ;
+          echo 'merged: '$merged ;
+          git branch -d $merged ;
+          git push esc --delete $merged ; 
+        } ; f
+
+Creating the Pull-Request
+-------------------------
+
+* First, setup the branch, make the changes, push and submit the PR
+
+  .. code-block:: console
+
+    $ git co -b new_feature
+    $ vi file ; git add file ; git commit
+    $ git push esc -u HEAD # set upstream
+    $ hub pull-request # submit pull-request
+
+* Review the comments and address any requests
+
+  .. code-block:: console
+
+    $ vi file ; git add file ; git commit
+    $ git push # use upstream info
+
+Cleaning up after merge
+-----------------------
+
+* Fetch the merge(s) and remove the feature branches
+
+  .. code-block:: console
+
+    $ git co master
+    $ git fa # fetch all
+    $ git ft # fast-forward master to merged PR
+    $ git prune-dev # prune local branches and remote branches
