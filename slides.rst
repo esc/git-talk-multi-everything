@@ -234,8 +234,8 @@ Deleting Remote Branches
 
   .. code-block:: console
 
-      $ git push origin --delete <BRANCH>
-      $ git push origin :<BRANCH>
+      $ git push origin --delete $BRANCH
+      $ git push origin :$BRANCH
 
 Prune Stale Remote-Tracking Branches
 ------------------------------------
