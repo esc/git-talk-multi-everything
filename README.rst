@@ -25,7 +25,7 @@ Content
 All Content is...
 
 * Copyright 2013 Valentin Haenel <valentin@haenel.co>
-* Licensed under the terms of [Attribution-NonCommercial-ShareAlike 3.0 Unported  (`CC BY-NC-SA 3.0 <http://creativecommons.org/licenses/by-nc-sa/3.0/>`_)
+* Licensed under the terms of `Attribution-NonCommercial-ShareAlike 3.0 Unported  (CC BY-NC-SA 3.0) <http://creativecommons.org/licenses/by-nc-sa/3.0/>`_
 
 Included Dependencies
 ~~~~~~~~~~~~~~~~~~~~~
