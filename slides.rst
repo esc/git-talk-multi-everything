@@ -265,7 +265,7 @@ Showing all remote-tracking branches
        echo ${line#refs/remotes/};
      done ;
    } ; f
- $ git ls-rt esc
+ $ git ls-rt github/esc
  github/esc/master
  github/esc/feature/cli
 
