@@ -49,6 +49,11 @@ How does it Continue?
 * Especially when you have multiple feature branches in multiple remote
   repositories.
 
+* In this talk I will cover possible commands and workflows for dealing with
+  multiple repositories and multiple branches within them
+
+* Heavily biased towards my own experineces and preferences
+
 Sources for Confusion
 ---------------------
 
