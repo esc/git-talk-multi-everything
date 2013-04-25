@@ -165,6 +165,25 @@ Setting and Querying the Upstream-Branch
       $ git branch -vv
       $ git remote show <remote> # Tries to connect
 
+Using the Upstream-Branch in other commands
+-------------------------------------------
+
+* Special syntax: ``<ref>#{upstream}``
+* The ``<ref>`` is optional
+* Can be shortened to ``@{u}``
+
+  .. code-block:: console
+
+      $ git rev-parse --abbrev-ref --symbolic-full-name @{u}
+      origin/master
+
+* Usage examples
+
+  .. code-block:: console
+
+      $ git log @{u}..
+      $ git rebase -i @{u}
+
 Committing to remote branches
 -----------------------------
 
