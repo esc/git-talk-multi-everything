@@ -288,8 +288,6 @@ Submitting Pull-Requests
 .. image:: images/github-workflow-en.pdf
    :scale: 40
 
-
-
 Adding a Second Remote
 ----------------------
 
