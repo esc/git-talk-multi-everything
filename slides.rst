@@ -90,7 +90,6 @@ Interlude: Remote Tracking Branches
 -----------------------------------
 
 * Reminder: Branches are just *pointers* into the DAG
-* Remote-tracking
 * Keeping track of what is going on in the remote
 * Updated by Git during synchronization
 
