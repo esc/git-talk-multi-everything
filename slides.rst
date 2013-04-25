@@ -8,7 +8,7 @@ Outline
 
     \tableofcontents
 
-In The Beginning ...
+In the Beginning ...
 --------------------
 
 * When doing git training I usually take the following approach:
