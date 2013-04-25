@@ -225,33 +225,6 @@ Submitting Pull-Requests
 .. image:: images/github-workflow-en.pdf
    :scale: 40
 
-Using the 4 word version of ``git fetch``
------------------------------------------
-
-* ``git pull`` is ``fetch`` + ``merge``
-* "Oh great, so I can just use ``git fetch origin master``?"
-* "And what exactly is the ``FETCH_HEAD``?
-
-Remote Tracking Branches
-------------------------
-
-* ``--track`` and ``--set-upstream``: who is tracking what?
-* What exactly does ``push.default`` do?
-
-Stale Branches
---------------
-
-
-
-A quote
--------
-
-
-The Github Model
-----------------
-
-* The integration manager workflow
-
 
 
 Adding a second remote
@@ -297,5 +270,15 @@ Showing all remote-tracking branches
  github/esc/master
  github/esc/feature/cli
 
+Using the 4 word version of ``git fetch``
+-----------------------------------------
 
+* ``git pull`` is ``fetch`` + ``merge``
+* "Oh great, so I can just use ``git fetch origin master``?"
+* "And what exactly is the ``FETCH_HEAD``?
 
+Remote Tracking Branches
+------------------------
+
+* ``--track`` and ``--set-upstream``: who is tracking what?
+* What exactly does ``push.default`` do?
