@@ -93,7 +93,11 @@ Interlude: Remote Tracking Branches
 * Keeping track of what is going on in the remote
 * Updated by Git during synchronization
 
-  * (via ``git fetch origin``, ``git pull``, ``git remote update``, ...)
+  .. code-block: console
+
+      $ git fetch origin
+      $ git pull
+      $ git remote update
 
 Before ``git clone``
 --------------------
@@ -155,9 +159,16 @@ Setting and Querying the Upstream-Branch
 * Can also be set using ``git branch --set-upstream``
 * Query using
 
-  * ``git config --get-regexp branch.<name>.*``
-  * ``git branch -vv``
-  * ``git remote show <remote>`` (Tries to connect)
+  .. code-block:: console
+
+      $ git config --get-regexp branch.<name>.*
+      $ git branch -vv
+      $ git remote show <remote> # Tries to connect
+
+Committing to remote branches
+-----------------------------
+
+
 
 Deleting Remote Branches
 ------------------------
