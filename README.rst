@@ -1,0 +1,40 @@
+git-talk-multi-everything
+=========================
+
+Description
+-----------
+
+Talk about using Git with multiple branches and multiple remotes 
+
+Author
+------
+
+Valentin Haenel <<valentin@haenel.co>>
+
+Dependencies
+------------
+
+The talk is made with:
+
+* [rst2beamer](https://github.com/rst2beamer/rst2beamer) (included in repository)
+* [LaTeX Beamer](https://bitbucket.org/rivanvx/beamer/wiki/Home)
+* [ccBeamer] (http://blog.hartwork.org/?p=52) (included in repository)
+
+License
+-------
+
+Content
+~~~~~~~
+
+All Content is...
+
+* Copyright 2013 Valentin Haenel <<valentin@haenel.co>>
+* Licensed under the terms of [Attribution-NonCommercial-ShareAlike 3.0 Unported  (CC BY-NC-SA 3.0) ](http://creativecommons.org/licenses/by-nc-sa/3.0/)
+
+Included Dependencies
+~~~~~~~~~~~~~~~~~~~~~
+
+The following dependencies are shipped with the sources:
+
+* rst2beamer (file: `rst2beamer`) is copyright Ryan Krauss and Paul-Michael Agapow
+* ccBeamer (directory: `creative_commons/`) is licensed under Creative Commons Attribution-ShareAlike 3.0
