@@ -118,7 +118,7 @@ Just push the ref:
    $ git push origin HEAD
    $ git push origin fix/setup
 
-Or, throw in a ``-u`` to set the upstream branch:
+Better jet, throw in a ``-u`` to set the upstream branch:
 
 .. code-block:: console
 
