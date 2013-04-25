@@ -73,7 +73,7 @@ Outline
 
     \tableofcontents
 
-Multi-Branch basics
+Multi-Branch Basics
 -------------------
 
 * Reminder: Branching (and more importantly: merging) in Git is cheap, quick
@@ -165,7 +165,7 @@ Setting and Querying the Upstream-Branch
       $ git branch -vv
       $ git remote show <remote> # Tries to connect
 
-Using the Upstream-Branch in other commands
+Using the Upstream-Branch in Other Commands
 -------------------------------------------
 
 * Special syntax: ``<ref>#{upstream}``
@@ -184,14 +184,14 @@ Using the Upstream-Branch in other commands
       $ git log @{u}..
       $ git rebase -i @{u}
 
-Committing to remote branches
+Committing to Remote Branches
 -----------------------------
 
 * You can't commit directly to remote-tracking branches
 * You need to create a local branch and commit to that
 * Again the upstream-configuration comes in handy
 
-Some ``git checkout`` magic
+Some ``git checkout`` Magic
 ---------------------------
 
 * You can just use ``git checkout``, if the branch name is unambiguous
@@ -207,7 +207,7 @@ Some ``git checkout`` magic
      Branch 0.4.X set up to track remote branch 0.4.X from origin.
      Switched to a new branch '0.4.X'
 
-Some ``git checkout`` magic
+Some ``git checkout`` Magic
 ---------------------------
 
 .. code-block:: console
@@ -265,7 +265,7 @@ Prune Stale Remote-Tracking Branches
       $ git pull --prune
       $ git remote update --prune
 
-Using Multiple Remotes (with multiple branches)
+Using Multiple Remotes (with Multiple Branches)
 ===============================================
 
 Outline
@@ -290,13 +290,13 @@ Submitting Pull-Requests
 
 
 
-Adding a second remote
+Adding a Second Remote
 ----------------------
 
 * Throw in a ``-f`` to fetch immediately
 * ``git remote add <NAME> -f <URL>``
 
-Remote-Tracking Branches for multiple remotes
+Remote-Tracking Branches for Multiple Remotes
 ---------------------------------------------
 
 .. image:: images/multi_remote.pdf
