@@ -128,10 +128,32 @@ Or, throw in a ``-u`` to set the upstream branch:
 Interlude: Upstream-Branch
 --------------------------
 
-* Setting: ``branche.<name>.merge``
+* Setting: ``branch.<name>.merge`` and ``branch.<name>.remote``
+
+.. code-block:: ini
+
+   [branch "master"]
+       remote = origin
+       merge = refs/heads/master
+
+* Can also be set using ``git branch --set-upstream``
+* Query using
+
+  * ``git config --get-regexp branch.<name>.*``
+  * ``git branch -vv``
+  * ``git remote show <remote>``
+
 
 * Allows ``git pull`` w/o arguments
+* Allows ``git push`` w/o arguments
 
+  * If you are using one of for  ``push.default``
+
+    * ``tracking``
+    * ``upstream``
+    * ``simple``
+
+  * If you are using Git 2.0, where the default is ``simple``
 
 The Integration Manager Workflow
 --------------------------------
