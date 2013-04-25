@@ -160,6 +160,58 @@ Setting and Querying the Upstream-Branch
   * ``git branch -vv``
   * ``git remote show <remote>`` (Tries to connect)
 
+Deleting Remote Branches
+------------------------
+
+* So we started using short-lived feature branches in a hybrid model, after a
+  few weeks I see we have 100+ merged feature branches.
+
+* Delete the feature branches in the remote:
+
+.. code-block:: console
+
+    $ git push origin --delete <BRANCH>
+    $ git push origin :<BRANCH>
+
+Prune Stale Remote-Tracking Branches
+------------------------------------
+
+.. code-block:: irc
+
+    amitpraka: Hi, i have a lot of remotes/origin/X branches
+      on local..  however git push origin: X or
+      git push origin --delete X doesn't work
+      complaining of remote ref does not exist
+
+    amitpraka: How do I get rid of my local remotes/origin/X
+      w.o deleting each one individually?
+
+    esc: amitprakash: you could try the --prune
+      option for git fetch
+
+    amitpraka: esc, thanks.. that worked
+
+Prune Stale Remote-Tracking Branches
+------------------------------------
+
+For others to see the deletion you need ``--prune``
+
+.. code-block:: console
+
+    $ git fetch --prune
+    $ git pull --prune
+    $ git remote update --prune
+
+Using Multiple Remotes (with multiple branches)
+===============================================
+
+Outline
+-------
+
+.. raw:: latex
+
+    \tableofcontents
+
 
 The Integration Manager Workflow
 --------------------------------
@@ -189,38 +241,11 @@ Remote Tracking Branches
 Stale Branches
 --------------
 
-* So we started using short-lived feature branches in a hybrid model, after a
-  few weeks I see we have 100+ merged feature branches.
 
-* Delete the feature branches in the remote:
-
-.. code-block:: console
-
-    $ git push origin --delete <BRANCH>
-    $ git push origin :<BRANCH>
-
-* But for others to see the deletion you need ``--prune``
-
-.. code-block:: console
-
-    $ git fetch --prune
-    $ git pull --prune
-    $ git remote update --prune
 
 A quote
 -------
 
-.. code-block:: irc
-
-    « amitpraka» Hi, i have a lot of remotes/origin/X branches
-    on local..  however git push origin: X or
-    git push origin --delete X doesn't work
-    complaining of remote ref does not exist
-    « amitpraka» How do I get rid of my local remotes/origin/X
-    w.o deleting each one individually?
-    «       esc» amitprakash: you could try the --prune
-    option for git fetch
-    « amitpraka» esc, thanks.. that worked
 
 The Github Model
 ----------------
