@@ -114,19 +114,19 @@ After ``git clone``
 Pushing Branches
 ----------------
 
-Just push the ref:
+* Just push the ref:
 
-.. code-block:: console
+  .. code-block:: console
 
-   $ git push origin HEAD
-   $ git push origin fix/setup
+     $ git push origin HEAD
+     $ git push origin fix/setup
 
-Better jet, throw in a ``-u`` to set the upstream branch:
+* Better jet, throw in a ``-u`` to set the upstream branch:
 
-.. code-block:: console
+  .. code-block:: console
 
-   $ git push origin -u HEAD
-   $ git push origin -u fix/setup
+     $ git push origin -u HEAD
+     $ git push origin -u fix/setup
 
 Interlude: Upstream-Branch
 --------------------------
@@ -136,11 +136,11 @@ Interlude: Upstream-Branch
   * ``branch.<name>.merge``
   * ``branch.<name>.remote``
 
-.. code-block:: ini
+  .. code-block:: ini
 
-   [branch "master"]
-       remote = origin
-       merge = refs/heads/master
+     [branch "master"]
+         remote = origin
+         merge = refs/heads/master
 
 * Allows ``git pull`` w/o arguments
 * Allows ``git push`` w/o arguments
@@ -194,18 +194,18 @@ Committing to remote branches
 Some ``git checkout`` magic
 ---------------------------
 
-You can just use ``git checkout``, if the branch name is unambiguous
+* You can just use ``git checkout``, if the branch name is unambiguous
 
-.. code-block:: console
+  .. code-block:: console
 
-   $ git branch -a
-   * master
-     remotes/esc/master
-     remotes/origin/0.4.X
-     remotes/origin/HEAD -> origin/master
-   $ git checkout 0.4.X
-   Branch 0.4.X set up to track remote branch 0.4.X from origin.
-   Switched to a new branch '0.4.X'
+     $ git branch -a
+     * master
+       remotes/esc/master
+       remotes/origin/0.4.X
+       remotes/origin/HEAD -> origin/master
+     $ git checkout 0.4.X
+     Branch 0.4.X set up to track remote branch 0.4.X from origin.
+     Switched to a new branch '0.4.X'
 
 Some ``git checkout`` magic
 ---------------------------
@@ -231,10 +231,10 @@ Deleting Remote Branches
 
 * Delete the feature branches in the remote:
 
-.. code-block:: console
+  .. code-block:: console
 
-    $ git push origin --delete <BRANCH>
-    $ git push origin :<BRANCH>
+      $ git push origin --delete <BRANCH>
+      $ git push origin :<BRANCH>
 
 Prune Stale Remote-Tracking Branches
 ------------------------------------
@@ -257,13 +257,13 @@ Prune Stale Remote-Tracking Branches
 Prune Stale Remote-Tracking Branches
 ------------------------------------
 
-For others to see the deletion you need ``--prune``
+* For others to see the deletion you need ``--prune``
 
-.. code-block:: console
+  .. code-block:: console
 
-    $ git fetch --prune
-    $ git pull --prune
-    $ git remote update --prune
+      $ git fetch --prune
+      $ git pull --prune
+      $ git remote update --prune
 
 Using Multiple Remotes (with multiple branches)
 ===============================================
