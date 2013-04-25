@@ -1,5 +1,5 @@
 base = slides
-slidefilename = NAME
+slidefilename = git-talk-multi-everything
 
 .PHONY: git-sha
 
