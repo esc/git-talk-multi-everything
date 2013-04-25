@@ -119,14 +119,14 @@ Pushing Branches
   .. code-block:: console
 
      $ git push origin HEAD
-     $ git push origin fix/setup
+     $ git push origin feature
 
 * Better jet, throw in a ``-u`` to set the upstream branch:
 
   .. code-block:: console
 
      $ git push origin -u HEAD
-     $ git push origin -u fix/setup
+     $ git push origin -u feature
 
 Interlude: Upstream-Branch
 --------------------------
