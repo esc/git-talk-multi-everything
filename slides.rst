@@ -98,7 +98,7 @@ Interlude: Remote Tracking Branches
 * Keeping track of what is going on in the remote
 * Updated by Git during synchronization:
 
-  .. code-block: console
+  .. code-block:: console
 
       $ git fetch origin
       $ git pull
