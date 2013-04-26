@@ -395,9 +395,13 @@ Getting Updates -- Personal Favorite
 * Why?
 
   * Allows me to fast forward my branches, no implied merge or rebase
+
     * My shell prompt shows number ahead/behind/diverged
+
   * ``--tags`` will update re-written tags for me
+
     * Yes, I know you aren't supposed to rewrite tags
+
   * ``--prune`` will prune stale remote-tracking branches
 
 Warning: Using the 4 word version of ``git fetch``
