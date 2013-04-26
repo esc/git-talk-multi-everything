@@ -85,6 +85,10 @@ Multi-Branch Basics
   and easy.
 * Okay, so let's do that.
 
+.. raw:: latex
+
+   \hspace{1em}
+
 * So what about getting the branches to your remote?
 * How do others get those branches locally?
 
