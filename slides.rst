@@ -49,15 +49,15 @@ How does it Continue?
 * Especially when you have multiple feature branches in multiple remote
   repositories.
 
-* In this talk I will cover possible commands and workflows for dealing with
+* In this talk I will cover possible commands and work-flows for dealing with
   multiple repositories and multiple branches within them
 
-* Heavily biased towards my own experineces and preferences
+* Heavily biased towards my own experiences and preferences
 
 Sources for Confusion
 ---------------------
 
-* Initially perhaps people just use the *push 'n' pull* workflow with a single
+* Initially perhaps people just use the *push 'n' pull* work-flow with a single
   remote ``origin`` and single branch ``master``.
 
   * But wait, why do I get these merge commits? (a.k.a *Diamond Merges*)
@@ -158,7 +158,7 @@ Interlude: Upstream-Branch
 
   * If you are using Git 2.0, where the default is ``simple``
 
-* Shows you number ahead/behind/diveregd in ``git status``
+* Shows you number ahead/behind/diverged in ``git status``
 
 Setting and Querying the Upstream-Branch
 ----------------------------------------
@@ -364,7 +364,7 @@ Getting Updates
 Getting Updates -- Personal Favorite
 ------------------------------------
 
-* My personal favorite workflow is
+* My personal favorite work-flow is
 
   .. code-block:: console
 
@@ -378,7 +378,7 @@ Getting Updates -- Personal Favorite
 * Why?
 
   * Allows me to fast forward my branches, no implied merge or rebase
-    * My shell prompt shows number ahead/behind/diveregd
+    * My shell prompt shows number ahead/behind/diverged
   * ``--tags`` will update re-written tags for me
     * Yes, I know you aren't supposed to rewrite tags
   * ``--prune`` will prune stale remote-tracking branches
