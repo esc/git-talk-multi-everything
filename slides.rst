@@ -183,6 +183,7 @@ Using the Upstream-Branch in Other Commands
 
   .. code-block:: console
 
+      $ git checkout master
       $ git rev-parse --abbrev-ref --symbolic-full-name @{u}
       origin/master
 
