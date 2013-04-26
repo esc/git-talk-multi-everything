@@ -404,17 +404,17 @@ Getting Updates -- Personal Favorite
 
   * ``--prune`` will prune stale remote-tracking branches
 
-Warning: Using the 4 word version of ``git fetch``
---------------------------------------------------
-
-* ``git pull`` is ``fetch`` + ``merge``
-* You could just use:
-
-  .. code-block:: console
-
-    $ git fetch origin master
-
-* However you need to know what ``FETCH_HEAD`` means
+.. Warning: Using the 4 word version of ``git fetch``
+.. --------------------------------------------------
+.. 
+.. * ``git pull`` is ``fetch`` + ``merge``
+.. * You could just use:
+.. 
+..   .. code-block:: console
+.. 
+..     $ git fetch origin master
+.. 
+.. * However you need to know what ``FETCH_HEAD`` means
 
 Submitting Feature Branches through Pull-Requests
 -------------------------------------------------
