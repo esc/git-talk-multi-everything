@@ -97,10 +97,11 @@ Multi-Branch Basics
 
 * What happens when the branches have been merged?
 
-Interlude: Remote Tracking Branches
+Interlude: Remote-Tracking Branches
 -----------------------------------
 
 * Reminder: Branches are just *pointers* into the DAG
+* Remote-tracking branches are special kinds of branches
 * Keeping track of what is going on in the remote
 * Updated by Git during synchronization:
 
