@@ -387,10 +387,10 @@ Getting Updates -- Personal Favorite
 
     $ git config alias.fa
     fetch --all --tags --prune
-    $ git config alias.ft
+    $ git config alias.fu
     merge --ff @{u}
     $ git fa
-    $ git ft
+    $ git fu
 
 * Why?
 
@@ -470,7 +470,7 @@ Cleaning up After Merge
     $ git co master
     $ git fa # fetch all
     $ git log --oneline ..@{u} # check the changes
-    $ git ft # fast-forward master to merged PR
+    $ git fu # fast-forward master to merged PR
     $ git prune-dev # prune local branches and remote branches
 
 The Last Slide
