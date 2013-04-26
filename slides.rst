@@ -455,3 +455,24 @@ Cleaning up after merge
     $ git log --oneline ..@{u} # check the changes
     $ git ft # fast-forward master to merged PR
     $ git prune-dev # prune local branches and remote branches
+
+The Last Slide
+--------------
+
+* Everyones work-flow is different
+* Use the ideas to customize your own
+
+
+* The talk is made with:
+
+  * `rst2beamer <https://github.com/rst2beamer/rst2beamer>`_
+  * `ccBeamer <http://blog.hartwork.org/?p=52>`_
+  * `LaTeX Beamer <https://bitbucket.org/rivanvx/beamer/wiki/Home>`_
+  * `Dia <http://projects.gnome.org/dia/>`_
+
+.. raw:: latex
+
+   \hspace{2em}
+   \begin{center}
+   Questions?
+   \end{center}
