@@ -462,6 +462,9 @@ The Last Slide
 * Everyones work-flow is different
 * Use the ideas to customize your own
 
+.. raw:: latex
+
+   \hspace{2em}
 
 * The talk is made with:
 
