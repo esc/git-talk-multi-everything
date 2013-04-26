@@ -132,7 +132,7 @@ Pushing Branches
      $ git push origin HEAD
      $ git push origin feature
 
-* Better jet, throw in a ``-u`` to set the upstream branch:
+* Better yet, throw in a ``-u`` to set the upstream branch:
 
   .. code-block:: console
 
