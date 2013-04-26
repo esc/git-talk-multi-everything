@@ -251,8 +251,8 @@ If the Name is Ambiguous...
 Deleting Remote Branches
 ------------------------
 
-* So we started using short-lived feature branches in a hybrid model, after a
-  few weeks I see we have 100+ merged feature branches.
+* So we started using short-lived feature branches with a single remote
+* After a few weeks I see we have 100+ merged feature branches.
 
 * Delete the feature branches in the remote:
 
