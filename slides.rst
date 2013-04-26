@@ -467,7 +467,7 @@ Creating the Pull-Request
 Cleaning up After Merge
 -----------------------
 
-* Fetch the merge(s) and remove the feature branches:
+* Fetch the merge(s) and remove the feature branche(s):
 
   .. code-block:: console
 
