@@ -96,7 +96,7 @@ Interlude: Remote Tracking Branches
 
 * Reminder: Branches are just *pointers* into the DAG
 * Keeping track of what is going on in the remote
-* Updated by Git during synchronization
+* Updated by Git during synchronization:
 
   .. code-block: console
 
@@ -136,7 +136,7 @@ Pushing Branches
 Interlude: Upstream-Branch
 --------------------------
 
-* Setting
+* Setting:
 
   * ``branch.<name>.remote``
   * ``branch.<name>.merge``
@@ -150,7 +150,7 @@ Interlude: Upstream-Branch
 * Allows ``git pull`` w/o arguments
 * Allows ``git push`` w/o arguments
 
-  * If you are using one of for  ``push.default``
+  * If you are using one of for  ``push.default``:
 
     * ``tracking``
     * ``upstream``
@@ -164,7 +164,7 @@ Setting and Querying the Upstream-Branch
 ----------------------------------------
 
 * Can also be set using ``git branch --set-upstream``
-* Query using
+* Query using:
 
   .. code-block:: console
 
@@ -202,7 +202,7 @@ Committing to Remote Branches
 Some ``git checkout`` Magic
 ---------------------------
 
-* You can just use ``git checkout``, if the branch name is unambiguous
+* You can just use ``git checkout``, if the branch name is unambiguous:
 
   .. code-block:: console
 
@@ -265,7 +265,7 @@ Prune Stale Remote-Tracking Branches
 Prune Stale Remote-Tracking Branches
 ------------------------------------
 
-* For others to see the deletion you need ``--prune``
+* For others to see the deletion they need ``--prune``:
 
   .. code-block:: console
 
@@ -299,7 +299,7 @@ Submitting Pull-Requests
 Adding a Second Remote
 ----------------------
 
-* Throw in a ``-f`` to fetch immediately
+* Throw in a ``-f`` to fetch immediately:
 
   .. code-block:: console
 
@@ -364,7 +364,7 @@ Getting Updates
 Getting Updates -- Personal Favorite
 ------------------------------------
 
-* My personal favorite work-flow is
+* My personal favorite work-flow is:
 
   .. code-block:: console
 
@@ -427,7 +427,7 @@ Alias ``git prune-dev``
 Creating the Pull-Request
 -------------------------
 
-* First, setup the branch, make the changes, push and submit the PR
+* First, setup the branch, make the changes, push and submit the PR:
 
   .. code-block:: console
 
@@ -436,7 +436,7 @@ Creating the Pull-Request
     $ git push esc -u HEAD # set upstream
     $ hub pull-request # submit pull-request
 
-* Review the comments and address any requests
+* Review the comments and address any requests:
 
   .. code-block:: console
 
@@ -446,7 +446,7 @@ Creating the Pull-Request
 Cleaning up after merge
 -----------------------
 
-* Fetch the merge(s) and remove the feature branches
+* Fetch the merge(s) and remove the feature branches:
 
   .. code-block:: console
 
