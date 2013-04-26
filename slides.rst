@@ -91,6 +91,8 @@ Multi-Branch Basics
   * To review them?
   * To commit or merge to them?
 
+* What happens when the branches have been merged?
+
 Interlude: Remote Tracking Branches
 -----------------------------------
 
