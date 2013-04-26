@@ -237,6 +237,16 @@ Some ``git checkout`` Magic
    branch.0.4.X.remote origin
    branch.0.4.X.merge refs/heads/0.4.X
 
+If the Name is Ambiguous...
+---------------------------
+
+* ... be explicit about the start commit:
+
+  .. code-block:: console
+
+    $ git checkout -b 0.4.X origin/0.4.X
+    Branch 0.4.X set up to track remote branch 0.4.X from origin.
+    Switched to a new branch '0.4.X'
 
 Deleting Remote Branches
 ------------------------
