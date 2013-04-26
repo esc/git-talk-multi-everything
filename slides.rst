@@ -443,7 +443,7 @@ Creating the Pull-Request
     $ vi file ; git add file ; git commit
     $ git push # use upstream info
 
-Cleaning up after merge
+Cleaning up After Merge
 -----------------------
 
 * Fetch the merge(s) and remove the feature branches:
