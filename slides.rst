@@ -452,5 +452,6 @@ Cleaning up after merge
 
     $ git co master
     $ git fa # fetch all
+    $ git log --oneline ..@{u} # check the changes
     $ git ft # fast-forward master to merged PR
     $ git prune-dev # prune local branches and remote branches
