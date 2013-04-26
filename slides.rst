@@ -188,9 +188,9 @@ Using the Upstream-Branch in Other Commands
 
   .. code-block:: console
 
-      $ git log @{u}..
-      $ git rebase -i @{u}
-      $ git merge --ff @{u}
+      $ git log @{u}.. # commits not in $REMOTE
+      $ git rebase -i @{u} # clean-up before push
+      $ git merge --ff @{u} # merge the changes from upstream
 
 Committing to Remote Branches
 -----------------------------
